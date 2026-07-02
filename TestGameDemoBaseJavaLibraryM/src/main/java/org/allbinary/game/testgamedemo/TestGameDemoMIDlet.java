@@ -22,7 +22,6 @@ import org.allbinary.game.canvas.TestGameDemoSoftwareInfo;
 import org.allbinary.game.testgamedemo.canvas.TestGameDemoStartCanvas;
 import org.allbinary.game.testgamedemo.layer.TestGameDemoLayerManager;
 import org.allbinary.media.audio.TestGameDemoSoundsFactoryFactory;
-
 import org.allbinary.logic.communication.log.PreLogUtil;
 import org.allbinary.game.GameInfo;
 import org.allbinary.game.GameMode;
