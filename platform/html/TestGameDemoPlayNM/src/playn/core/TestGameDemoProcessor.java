@@ -67,6 +67,6 @@ public class TestGameDemoProcessor
 
         list.add(new MidletStartupProcessor(list));
 
-        ProgressCanvasFactory.getInstance().addPortion(10, "Loading");
+        ProgressCanvasFactory.getInstance().addNormalPortion(10, "Loading");
     }
 }
