@@ -30,6 +30,10 @@
         <testgamedemo.version>1.0.0-SNAPSHOT</testgamedemo.version>
         <allbinary.platform.version>1.0.0-SNAPSHOT</allbinary.platform.version>
 
+<!--        <gwt.loglevel>DEBUG</gwt.loglevel>-->
+        <!-- OBF (OBFUSCATED), PRETTY, DETAILED -->
+        <gwt.outputstyle>DETAILED</gwt.outputstyle>
+
     </properties>
 
     <dependencies>
@@ -40,6 +44,18 @@
             <!-- Game Version Start -->
             <version>${testgamedemo.version}</version>
             <!-- Game Version Start -->
+        </dependency>
+
+        <dependency>
+            <groupId>org.allbinary.media.image</groupId>
+            <artifactId>ImageHTMLJavaLibrary</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary.media.image</groupId>
+            <artifactId>ImageHTMLJavaLibrary</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <classifier>sources</classifier>
         </dependency>
 
         <dependency>
@@ -100,9 +116,7 @@
                 </configuration>
             </plugin>
       
-            <!-- GWT 
-            2.3.0-2-playn
-            -->
+            <!-- AllBinaryPlaynGWT has gwt-maven-plugin properties -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>gwt-maven-plugin</artifactId>

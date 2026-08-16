@@ -40,6 +40,8 @@ public class TestGameDemoProcessor
     {
         this.list.remove(0);
 
+        this.list.removeAt(0);
+
         //ExplosionResources explosionResources = ExplosionResources.getInstance();
         //PlayerShipResources basicShipResources = PlayerShipResources.getInstance();
         if (TouchScreenFactory.getInstance().isTouch())
