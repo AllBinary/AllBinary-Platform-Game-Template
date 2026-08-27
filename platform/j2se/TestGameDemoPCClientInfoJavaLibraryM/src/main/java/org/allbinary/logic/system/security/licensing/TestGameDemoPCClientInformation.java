@@ -21,9 +21,9 @@ import org.allbinary.logic.system.SoftwareInformation;
 public class TestGameDemoPCClientInformation
 extends AbeClientInformation
 {
+    private final static String PC_DESC = "PC";
     protected static final TestGameDemoPCClientInformation instance = new TestGameDemoPCClientInformation(TestGameDemoSoftwareInfo.getInstance());
     
-    private final static String PC_DESC = "PC";
     public TestGameDemoPCClientInformation(final SoftwareInformation softwareInformation)
     {
         super(
