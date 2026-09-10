@@ -50,7 +50,7 @@ public class TestGameDemoLevelBuilder implements LayerInterfaceVisitor
     }
 
     //private BasicGameResources[] playerResourceArray = new BasicGameResources[1];
-    //private Hashtable hashtable = new Hashtable();
+    //private Hashtable hashtable = StdUtil.getInstance().createHashtable();
     //private ArtificialIntelligenceInterfaceFactoryInterface artificialIntelligenceInterfaceFactoryInterface =
       //  new BoundBounceAIFactory();
 

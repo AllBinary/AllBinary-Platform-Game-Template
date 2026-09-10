@@ -1,23 +1,21 @@
 package org.allbinary.animation.image;
 
-import java.util.Hashtable;
-
 import org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
 import org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 import org.allbinary.graphics.threed.min3d.Min3dSceneResourcesFactory;
 import org.allbinary.image.opengles.OpenGLImageCacheFactory;
-
 import org.allbinary.game.configuration.feature.Features;
 import org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
+import org.allbinary.logic.StdUtil;
 
 public class TestGameDemoOpenGLThreedBasedAnimationInterfaceFactoryInterfaceFactory
 extends BaseResourceAnimationInterfaceFactoryInterfaceFactory
 {
     public TestGameDemoOpenGLThreedBasedAnimationInterfaceFactoryInterfaceFactory()
     {
-        super("TestGameDemo OpenGL ImageArray Animations", new Hashtable(), new Hashtable(), new Hashtable());
+        super("TestGameDemo OpenGL ImageArray Animations", StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
 
     private final int portion = 120;

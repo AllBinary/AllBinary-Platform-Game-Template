@@ -1,11 +1,9 @@
 package org.allbinary.animation.image;
 
-import java.util.Hashtable;
 
 import org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 import org.allbinary.graphics.threed.min3d.Min3dSceneResourcesFactory;
 import org.allbinary.image.opengles.OpenGLImageCacheFactory;
-
 import org.allbinary.animation.AnimationInterfaceFactoryInterface;
 import org.allbinary.animation.NullRotationAnimationFactory;
 import org.allbinary.animation.resource.BaseResourceAnimationInterfaceFactoryInterfaceFactory;
@@ -15,13 +13,14 @@ import org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 import org.allbinary.image.ImageCache;
+import org.allbinary.logic.StdUtil;
 
 public class TestGameDemoGameResourcesOpenGLThreedBasedAnimationInterfaceFactoryInterfaceFactory
         extends BaseResourceAnimationInterfaceFactoryInterfaceFactory
 {
     public TestGameDemoGameResourcesOpenGLThreedBasedAnimationInterfaceFactoryInterfaceFactory()
     {
-        super("OpenGL Image Animations", new Hashtable(), new Hashtable(), new Hashtable());
+        super("OpenGL Image Animations", StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
 
     private int index = 1;

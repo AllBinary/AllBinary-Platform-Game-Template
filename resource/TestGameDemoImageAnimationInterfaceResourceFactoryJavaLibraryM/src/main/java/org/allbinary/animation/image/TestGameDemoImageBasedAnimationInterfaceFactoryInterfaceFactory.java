@@ -13,7 +13,6 @@
 */
 package org.allbinary.animation.image;
 
-import java.util.Hashtable;
 
 import org.allbinary.graphics.opengles.OpenGLFeatureFactory;
 
@@ -24,6 +23,7 @@ import org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
 import org.allbinary.image.ImageCache;
 import org.allbinary.image.ImageCacheFactory;
+import org.allbinary.logic.StdUtil;
 import org.allbinary.logic.string.StringMaker;
 
 public class TestGameDemoImageBasedAnimationInterfaceFactoryInterfaceFactory
@@ -33,12 +33,12 @@ public class TestGameDemoImageBasedAnimationInterfaceFactoryInterfaceFactory
 
     public TestGameDemoImageBasedAnimationInterfaceFactoryInterfaceFactory()
     {
-        super("Image Animations", new Hashtable(), new Hashtable(), new Hashtable());
+        super("Image Animations", StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
 
     public TestGameDemoImageBasedAnimationInterfaceFactoryInterfaceFactory(String name)
     {
-        super(name, new Hashtable(), new Hashtable(), new Hashtable());
+        super(name, StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
   
     @Override

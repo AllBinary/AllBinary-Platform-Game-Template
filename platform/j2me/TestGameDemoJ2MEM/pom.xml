@@ -341,6 +341,18 @@
                             <value></value>
                         </replacement>
                         <replacement>
+                            <token>&lt;K,V&gt;</token>
+                            <value></value>
+                        </replacement>
+                        <replacement>
+                            <token>&lt;E&gt;</token>
+                            <value></value>
+                        </replacement>
+                        <replacement>
+                            <token>&lt;Object, Object&gt;</token>
+                            <value></value>
+                        </replacement>
+                        <replacement>
                             <token>@Override</token>
                             <value></value>
                         </replacement>

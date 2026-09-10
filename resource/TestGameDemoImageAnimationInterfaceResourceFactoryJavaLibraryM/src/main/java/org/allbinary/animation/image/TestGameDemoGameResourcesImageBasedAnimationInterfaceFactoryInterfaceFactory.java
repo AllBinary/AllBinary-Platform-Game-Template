@@ -13,7 +13,6 @@
 */
 package org.allbinary.animation.image;
 
-import java.util.Hashtable;
 
 import org.allbinary.game.resource.ResourceLoadingLevelFactory;
 import org.allbinary.graphics.opengles.OpenGLFeatureFactory;
@@ -23,18 +22,19 @@ import org.allbinary.game.configuration.feature.Features;
 import org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
 import org.allbinary.image.ImageCache;
 import org.allbinary.image.ImageCacheFactory;
+import org.allbinary.logic.StdUtil;
 
 public class TestGameDemoGameResourcesImageBasedAnimationInterfaceFactoryInterfaceFactory
         extends BaseResourceAnimationInterfaceFactoryInterfaceFactory
 {
     public TestGameDemoGameResourcesImageBasedAnimationInterfaceFactoryInterfaceFactory()
     {
-        super("Game Image Animations", new Hashtable(), new Hashtable(), new Hashtable());
+        super("Game Image Animations", StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
 
     public TestGameDemoGameResourcesImageBasedAnimationInterfaceFactoryInterfaceFactory(String name)
     {
-        super(name, new Hashtable(), new Hashtable(), new Hashtable());
+        super(name, StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
 
     @Override    

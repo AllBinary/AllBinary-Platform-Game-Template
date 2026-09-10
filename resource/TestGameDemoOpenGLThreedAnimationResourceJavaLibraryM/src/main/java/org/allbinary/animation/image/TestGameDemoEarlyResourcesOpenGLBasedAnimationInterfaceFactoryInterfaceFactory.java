@@ -1,6 +1,5 @@
 package org.allbinary.animation.image;
 
-import java.util.Hashtable;
 
 import org.allbinary.animation.NullSpecialAnimationFactory;
 import org.allbinary.game.resource.ResourceLoadingLevelFactory;
@@ -11,7 +10,7 @@ import org.allbinary.game.configuration.feature.GraphicsFeatureFactory;
 import org.allbinary.game.displayable.canvas.TitleResource;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvas;
 import org.allbinary.graphics.canvas.transition.progress.ProgressCanvasFactory;
-import org.allbinary.logic.communication.log.LogFactory;
+import org.allbinary.logic.StdUtil;
 import org.allbinary.logic.communication.log.LogUtil;
 
 public class TestGameDemoEarlyResourcesOpenGLBasedAnimationInterfaceFactoryInterfaceFactory
@@ -23,7 +22,7 @@ BaseResourceAnimationInterfaceFactoryInterfaceFactory
 
     public TestGameDemoEarlyResourcesOpenGLBasedAnimationInterfaceFactoryInterfaceFactory()
     {
-        super("Early OpenGL Animations", new Hashtable(), new Hashtable(), new Hashtable());
+        super("Early OpenGL Animations", StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable(), StdUtil.getInstance().createHashtable());
     }
 
     @Override
