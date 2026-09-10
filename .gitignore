@@ -1,5 +1,6 @@
 *.xml
 !pom.xml
+.github/*.md
 *.class
 .project
 .classpath
