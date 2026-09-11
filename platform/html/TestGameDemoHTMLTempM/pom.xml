@@ -22,7 +22,14 @@
     </properties>
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogJ2MEJavaLibrary</artifactId>
+            <!-- AllBinary Platform Version Start -->
+            <version>${allbinary.platform.version}</version>
+            <!-- AllBinary Platform Version End -->
+            <optional>true</optional>
+        </dependency>
         
         <dependency>
             <groupId>com.googlecode.playn</groupId>

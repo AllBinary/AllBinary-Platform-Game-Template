@@ -293,6 +293,9 @@
                             <!--
                             <outputDirectory>${project.build.directory}/sources</outputDirectory>
                             -->
+                            <excludeArtifactIds>
+                                LogJ2MEJavaLibrary
+                            </excludeArtifactIds>                            
                         </configuration>
                     </execution>
                 </executions>

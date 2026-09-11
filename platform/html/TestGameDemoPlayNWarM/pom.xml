@@ -30,10 +30,12 @@
         <testgamedemo.version>1.0.0-SNAPSHOT</testgamedemo.version>
         <allbinary.platform.version>1.0.0-SNAPSHOT</allbinary.platform.version>
 
-<!--        <gwt.loglevel>DEBUG</gwt.loglevel>-->
+        <!--        <gwt.loglevel>DEBUG</gwt.loglevel>-->
         <!-- OBF (OBFUSCATED), PRETTY, DETAILED -->
         <gwt.outputstyle>DETAILED</gwt.outputstyle>
 
+        <seamonkey.executable>C:/Program Files/SeaMonkey/seamonkey.exe</seamonkey.executable>
+        <game.url>http://localhost:8080/</game.url>
     </properties>
 
     <dependencies>
@@ -44,6 +46,41 @@
             <!-- Game Version Start -->
             <version>${testgamedemo.version}</version>
             <!-- Game Version Start -->
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LoggingHTMLException</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LoggingHTMLException</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogPlayNJavaLibrary</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>LogPlayNJavaLibrary</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ExceptionHTMLJavaLibrary</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.allbinary</groupId>
+            <artifactId>ExceptionHTMLJavaLibrary</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
+            <classifier>sources</classifier>
         </dependency>
 
         <dependency>
@@ -64,7 +101,7 @@
             <version>1.1-SNAPSHOT</version>
         </dependency>
     
-    <!--
+        <!--
         <dependency>
             <groupId>com.allen-sauer.gwt.log</groupId>
             <artifactId>gwt-log</artifactId>
@@ -141,6 +178,54 @@
                         <projectnature>com.google.gwt.eclipse.core.gwtNature</projectnature>
                     </additionalProjectnatures>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>8.0.0.v20110901</version>
+                <configuration>
+                    <daemon>true</daemon>
+                    <webApp>
+                        ${project.basedir}/target/${project.artifactId}-${project.version}
+                    </webApp>
+                    <webAppConfig>
+                        <contextPath>/${project.artifactId}-${project.version}</contextPath>
+                    </webAppConfig>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>test-game-html</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>run-exploded</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>launch-seamonkey-with-new-window</id>
+                        <phase>integration-test</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <executable>${seamonkey.executable}</executable>
+                            <arguments>
+                                <argument>-new-window</argument>
+                                <!--                                <argument>-new-tab</argument>-->
+                                <argument>-jsconsole</argument>
+                                <argument>${game.url}${project.artifactId}-${project.version}/</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>
