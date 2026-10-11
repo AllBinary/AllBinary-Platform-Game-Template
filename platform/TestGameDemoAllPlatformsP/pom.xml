@@ -34,7 +34,7 @@
 
         <module>../html/TestGameDemoHTMLPlatformP</module>
         <module>../android/TestGameDemoAndroidPlatformP</module>
-        <module>../avian/TestGameDemoAvianPlatformP</module>
+<!--        <module>../avian/TestGameDemoAvianPlatformP</module>-->
 
         
     </modules>
