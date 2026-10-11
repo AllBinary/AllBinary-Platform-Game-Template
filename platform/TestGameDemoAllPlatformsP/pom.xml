@@ -32,9 +32,11 @@
         <module>../j2me/TestGameDemoJ2MEPlatformP</module>
         <module>../j2se/TestGameDemoJ2SEPlatformP</module>
 
+<!--
         <module>../html/TestGameDemoHTMLPlatformP</module>
         <module>../android/TestGameDemoAndroidPlatformP</module>
-<!--        <module>../avian/TestGameDemoAvianPlatformP</module>-->
+        <module>../avian/TestGameDemoAvianPlatformP</module>
+-->
 
         
     </modules>
