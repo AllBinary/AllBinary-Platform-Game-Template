@@ -34,6 +34,7 @@
         <module>../TestGameDemoJ2SEM</module>
         <module>../TestGameDemoJ2SEApplicationM</module>
         
+<!--
         <module>../TestGameDemoJ2SEWithSWTM</module>
         <module>../TestGameDemoJ2SEWithSWTApplicationM</module>
         
@@ -41,6 +42,7 @@
         
         <module>../TestGameDemoThreedJ2SEWithSWTJOGLM</module>
         <module>../TestGameDemoThreedJ2SEWithSWTJOGLApplicationM</module>
+-->
 
                 
         <!--
